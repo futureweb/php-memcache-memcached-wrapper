@@ -191,5 +191,16 @@ if (!extension_loaded('memcache') && !function_exists('memcache_connect')) {
     {
         return getMemcachedLinkIdentifier($memcached)->decrement($key, $val);
     }
+    
+    /**
+     * Flush all existing items at the server
+     *
+     * @param $memcached
+     * @return bool
+     */
+    function memcache_decrement($memcached = null)
+    {
+        return getMemcachedLinkIdentifier($memcached)->flush($memcached);
+    }
 }   
 ?>
