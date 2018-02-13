@@ -200,7 +200,7 @@ if (!extension_loaded('memcache') && !function_exists('memcache_connect')) {
      */
     function memcache_flush($memcached = null)
     {
-        return getMemcachedLinkIdentifier($memcached)->flush($memcached);
+        return getMemcachedLinkIdentifier($memcached)->flush();
     }
 }   
 ?>
