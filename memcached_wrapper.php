@@ -198,7 +198,7 @@ if (!extension_loaded('memcache') && !function_exists('memcache_connect')) {
      * @param $memcached
      * @return bool
      */
-    function memcache_decrement($memcached = null)
+    function memcache_flush($memcached = null)
     {
         return getMemcachedLinkIdentifier($memcached)->flush($memcached);
     }
