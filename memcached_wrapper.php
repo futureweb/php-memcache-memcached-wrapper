@@ -202,5 +202,93 @@ if (!extension_loaded('memcache') && !function_exists('memcache_connect')) {
     {
         return getMemcachedLinkIdentifier($memcached)->flush();
     }
+    
+    /**
+     * Get statistics from all servers in pool
+     *
+     * @todo implement this Function
+     */
+    function memcache_getExtendedStats($memcached = null)
+    {
+        trigger_error('This function is yet not implemented', E_USER_WARNING);
+        return false;
+    }
+    
+    /**
+     * Returns server status
+     *
+     * @todo implement this Function
+     */
+    function memcache_getServerStatus($memcached = null)
+    {
+        trigger_error('This function is yet not implemented', E_USER_WARNING);
+        return false;
+    }
+    
+    /**
+     * Get statistics of the server
+     *
+     * @todo implement this Function
+     */
+    function memcache_getStats($memcached = null)
+    {
+        trigger_error('This function is yet not implemented', E_USER_WARNING);
+        return false;
+    }
+    
+    /**
+     * Return version of the server
+     *
+     * @todo implement this Function
+     */
+    function memcache_getVersion($memcached = null)
+    {
+        trigger_error('This function is yet not implemented', E_USER_WARNING);
+        return false;
+    }
+    
+    /**
+     * Enable automatic compression of large values
+     *
+     * @todo implement this Function
+     */
+    function memcache_setCompressThreshold($memcached = null)
+    {
+        trigger_error('This function is yet not implemented', E_USER_WARNING);
+        return false;
+    }
+    
+    /**
+     * Turn debug output on/off
+     *
+     * @todo implement this Function
+     */
+    function memcache_debug($memcached = null)
+    {
+        trigger_error('This function is yet not implemented', E_USER_WARNING);
+        return false;
+    }
+    
+    /**
+     * Changes server parameters and status at runtime
+     *
+     * @todo implement this Function
+     */
+    function memcache_setServerParams($memcached = null)
+    {
+        trigger_error('This function is yet not implemented', E_USER_WARNING);
+        return false;
+    }
+    
+    /**
+     * Open memcached server persistent connection
+     *
+     * @todo implement this Function
+     */
+    function memcache_pconnect($host, $port = 11211, $timeout = 1)
+    {
+        trigger_error('This function is yet not implemented', E_USER_WARNING);
+        return false;
+    }
 }   
 ?>
